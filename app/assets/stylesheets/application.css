@@ -16,16 +16,39 @@
 
 
 h1 {
-	color : red;
+  color : #0086FF;
+  text-align: center;
+  margin : 10px;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
 }
 
 
 .col-md-6{
 	text-align: center;
+  align-content: center;
+  align-items: center;
+
 }
 
 
 .avatar{
-	height:400px;
+	height:300px;
+  padding: 10px;
 }
+
+.center {
+text-align: center;
+}
+
+
+li {
+
+list-style: none;
+
+}
+
 

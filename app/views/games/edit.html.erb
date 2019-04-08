@@ -1,10 +1,8 @@
-<h1>Games#edit</h1>
-<p>Find me in app/views/games/edit.html.erb</p>
-
 <h1><%= @question %></h1>
 
+<p class="center">
+<%= link_to "Oui", game_path(params["id"], answer: "yes", question_id: params["question_id"]), method: :patch, class: "btn btn-success"  %>
+<%= link_to "Non", game_path(params["id"], answer: "no", question_id: params["question_id"]), method: :patch, class: "btn btn-danger"  %>
+</p>
 
-<%= link_to "Oui", game_path(params["id"], answer: "yes", question_id: params["question_id"]), method: :patch %>
-<%= link_to "Non", game_path(params["id"], answer: "no", question_id: params["question_id"]), method: :patch %>
-
-<%= link_to( "Question suivante", game_path(1), method: :patch, class: "btn btn-primary" ) %>
+<!-- <%= link_to( "Question suivante", game_path(1), method: :patch, class: "btn btn-primary" ) %> -->
