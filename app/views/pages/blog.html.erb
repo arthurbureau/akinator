@@ -1,0 +1,15 @@
+<h1> mon 1er blog </h1>
+
+<p> blablablablablablalbalbalbalblalablabballalablablablabla</p>
+
+
+
+
+<% @articles.each do |article|%>
+
+<div class="article">
+	<h2><%= article["title"]%></h2>
+	<p><%=	article["content"]%></p>
+</div>
+
+<% end %>
